@@ -1,0 +1,33 @@
+extends ../layout
+
+block content
+  .row
+    .col-md-1#padded
+      if user
+        h4.white #{user}
+        a.link(href='/users/signout') Sign Out
+    .col-md-9
+    .col-md-2
+      a.link(href='/cities')
+        button.search Search for new City
+  .row#space
+        h1.title.text-center #{attractions[0].location.city} 
+  .row
+    .col-md-5#box
+      h1.headline Top Outdoor Activities
+      for attraction in attractions
+          h4 #{attraction.name}
+          p #{attraction.snippet_text}
+          a(href= '#{attraction.mobile_url}') More Info Here
+    .col-md-5#box
+        div
+          h1.headline Weather
+          for forecast in forecasts
+            if (forecast.title).indexOf('Night') == -1
+              h4 #{forecast.title}
+              img(src="#{forecast.icon_url}")
+              p Weather: #{forecast.fcttext}
+  .row
+    .col-md-1
+    .col-md-5
+        img(src='/images/yelp-logo.png', height="102", width="102")

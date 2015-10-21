@@ -1,0 +1,170 @@
+@font-face {
+  font-family: 'SeasideResort';
+  src: url('/stylesheets/SeasideResort.ttf');
+}
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url('http://images8.alphacoders.com/370/370799.jpg');
+}
+
+.white {
+  color: white;
+
+}
+.search {
+  border-radius: 30px;
+  background-color: gray;
+  outline: none;
+  margin-top: 10px;
+}
+
+.headline {
+  color: gray;
+  font-size: 40px;
+  margin-bottom: 0;
+  text-decoration: underline;
+}
+
+.title {
+  font-family: 'SeasideResort';
+  text-shadow: 2px 2px black;
+  color: lightgray;
+  font-size: 75px;
+}
+
+.link {
+  color: white;
+}
+
+.link:link {
+    text-decoration: none;
+    color: white;
+}
+
+.link:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.link:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.link:active {
+    text-decoration: none;
+    color: white;
+}
+
+#wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+#preheader {
+    width: 100%;
+    height: 100px;
+   /* background-color: #FF6600;*/
+}
+#header {
+    width: 100%;
+    height:480px;
+   /* background-image: url('http://images8.alphacoders.com/370/370799.jpg');*/
+}
+#skew {
+  padding-left: 35px;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    z-index: 1;
+    -webkit-transform: skewY(-2.5deg);
+    -moz-transform: skewY(-2.5deg);
+    -ms-transform: skewY(-2.5deg);
+    -o-transform: skewY(-2.5deg);
+    transform: skewY(-2.5deg);
+    color: white;
+    text-shadow: 2px 2px black;
+
+}
+.topslant {
+    transform-origin: right;
+    border-bottom: thick solid white;
+}
+
+.bottomslant {
+	transform-origin: left;
+	border-top: thick solid white;
+}
+
+#logo {
+	color: white;
+	font-family:'SeasideResort';
+	font-size: 100px;
+  text-shadow: 2px 2px black;
+
+}
+ #space {
+ 	height: 120px;
+ }
+
+#padded {
+  padding-left: 50px;
+}
+
+#pad {
+	padding-left: 50px;
+  padding-bottom: 45px;
+  text-shadow: 2px 2px black;
+}
+
+#box {
+  background-color:rgba(255,255,255, 0.9);
+  padding-left: 30px;
+  box-shadow: 2px 2px black; 
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+#submit {
+  color: white;
+  background-color: red;
+}
+.ghost-button {
+  display: inline-block;
+  width: 300px;
+  height: 40px;
+  padding: 8px;
+  color: #fff;
+  border: 2px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out,
+              border-color 0.2s ease-out;
+}
+.ghost-button:hover,
+.ghost-button:active {
+  background-color: #fff; /* fallback */
+  background-color: rgba(255, 255, 255, 0.4);
+  border-color: #fff; /* fallback */
+  border-color: rgba(255, 255, 255, 0.4);
+  transition: background-color 0.3s ease-in,
+              border-color 0.3s ease-in;
+}
+
+input[type=text]:focus {
+  box-shadow: 0 0 5px red;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid black;
+}
+
+select[name=state]:focus {
+  box-shadow: 0 0 5px red;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid black;
+}

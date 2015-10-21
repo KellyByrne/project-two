@@ -1,0 +1,24 @@
+extends ../layout
+
+block content
+  .row#space
+  .row
+    .col-md-3
+    .col-md-6#box
+      h1 Sign Up
+      if errors
+        for message in errors
+          p(style= "color:red") #{message}
+      form(method='post' action='/users/signup')
+        p
+          label Name &nbsp    
+          input.form-control(type="text" name="name")
+        p
+          label Email &nbsp    
+          input.form-control(type="text" name="email")
+        p
+          label Password  &nbsp  
+          input.form-control(type="password" name="password")
+        p
+          button.form-control(type="submit") Submit
+    .col-md-3
