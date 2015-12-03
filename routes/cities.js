@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var unirest = require('unirest');
-var db = require('monk')(process.env. || 'localhost/project2');
+var db = require('monk')(process.env.MONGOLAB_URI || 'localhost/project2');
 
 var yelp = require("node-yelp");
 var unirest = require('unirest')
