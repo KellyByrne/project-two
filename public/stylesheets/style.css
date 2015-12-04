@@ -156,15 +156,37 @@ body {
 }
 
 input[type=text]:focus {
-  box-shadow: 0 0 5px red;
+  box-shadow: 0 0 10px #4E8E91;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid black;
+}
+
+input[type=password]:focus {
+  box-shadow: 0 0 10px #4E8E91;
   padding: 3px 0px 3px 3px;
   margin: 5px 1px 3px 0px;
   border: 1px solid black;
 }
 
 select[name=state]:focus {
-  box-shadow: 0 0 5px red;
+  box-shadow: 0 0 10px #4E8E91;
   padding: 3px 0px 3px 3px;
   margin: 5px 1px 3px 0px;
   border: 1px solid black;
+}
+
+.btn, .btn:visited {
+    background-color: #4E8E91 !important;
+    color: white !important;
+    outline: none !important;
+    letter-spacing: 3px !important;
+}
+
+.btn:hover, .btn:active {
+  color: #4E8E91 !important;
+  font-weight: bold !important;
+  letter-spacing: 3px !important;
+  background-color: #d3d3d3 !important;
+  outline: none !important;
 }

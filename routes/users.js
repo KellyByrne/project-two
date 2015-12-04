@@ -64,7 +64,7 @@ router.post('/signin', function(req, res, next){
 		errors.push("Email is required.")
 	}
 	if(!req.body.password.trim()){
-		errors.push("Email is required.")
+		errors.push("Password is required.")
 	}
 	if(req.body.password.length < 8){
 		errors.push("Password must be greater than 8 characters.")
